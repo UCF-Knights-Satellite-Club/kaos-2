@@ -24,7 +24,7 @@ while True:
 
             print("Shutdown command received")
 
-            # Stop your camera/video 
+            # Stop your camera/video
 
             print("Camera stopped")
 
@@ -33,7 +33,7 @@ while True:
 
             print("DONE sent to Pico")
 
-            # Shut down Linux
+            # Shut down 2W
             os.system("sudo shutdown -h now")
 
             break
