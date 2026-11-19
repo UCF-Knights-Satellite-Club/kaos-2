@@ -1,0 +1,67 @@
+# KAOS-2 Documentation 
+
+
+# Mechanical
+
+## OnShape
+
+# Electrical
+
+## Regulator
+
+KAOS-1 used a linear regulator since it disepates the rest as thermal energy it could be reason why it overheated. 
+
+
+## Power 
+
+
+# Software
+KAOS-2 is using one raspberry pi pico and two raspberry pi 2 zero W. 
+
+## MCUS
+### Pico 
+Set up MCU: https://github.com/raspberrypi/pico-sdk
+https://github.com/raspberrypi/pico-examples
+
+## Video Capture
+
+Video will be captured on KAOS-2 using a Raspberry Pi 2 Zero W that takes continous video logs and saves it to the SD card. 
+
+## Pictures
+
+# Communications
+
+
+## Antenna 
+Due to the failure of communications on KAOS-1 the antennas might have to redisgned and implemented. 
+
+V-Dipole Antenna: 
+
+Antenna needs to be angled between 45-60 degrees per side 
+
+V-Dipole Antenna: https://apbouwens.github.io/V-dipole-rad-pat/
+
+## Light APRS 
+It is able to report location, altitude, temperature and pressure via internet/Amateur Radio
+
+Communicates via: I2C, SPI
+
+Further info: https://github.com/lightaprs/LightAPRS-1.0
+
+## How the APRS Protocol Works 
+
+APRS transmits at a standard frequency of 144.390 MHz
+
+## GND
+A simple magnectic roof antenna on the car to improve recovery performance for receiving on GND. 
+
+Using RTL-SDR connected to software DireWolf(virtual TNC) to receive and test APRS packets.
+
+DireWolf software: https://github.com/wb2osz/direwolf
+
+## Airtag 
+To be used as a close range backup recovery tool. Works over Bluetooth. Ranges from 100feet (30 meters) outdoors
+
+Other Option: Tile trackers which range from 100-500ft. 
+
+Alternative: Use LoRa Module to get more accurate location on 3-9 mile range. 
