@@ -58,7 +58,7 @@
 	)
 	(fp_line
 		(start 0 -12)
-		(end 9.5 -12)
+		(end 12.04 -12)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -77,8 +77,8 @@
 		(uuid "da1f8059-a57c-418d-85e3-1be7912a68f4")
 	)
 	(fp_line
-		(start 9.5 -12)
-		(end 9.5 0)
+		(start 12.04 -12)
+		(end 12.04 0)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -87,7 +87,7 @@
 		(uuid "dcc5e314-2c37-4ec3-a29c-7320b4fbbce7")
 	)
 	(fp_line
-		(start 9.5 0)
+		(start 12.04 0)
 		(end 0 0)
 		(stroke
 			(width 0.254)
@@ -178,6 +178,29 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "d5c07867-1e2f-4d62-9ce4-ab0ab0610332")
+	)
+	(fp_text user "GND"
+		(at 8.48 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "6b12d536-0d07-4992-8562-3336a4b07c1d")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "4" thru_hole oval
+		(at 9.88 -2 90)
+		(size 2.6 1.6)
+		(drill 1
+			(offset 0.3 0)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ea9107f6-1d74-4430-b4c5-e0851288ae9a")
 	)
 	(embedded_fonts no)
 )

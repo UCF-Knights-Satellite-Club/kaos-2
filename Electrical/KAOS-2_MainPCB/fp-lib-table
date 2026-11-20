@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "KAOS-2")(type "KiCad")(uri "${KIPRJMOD}/KAOS-2.pretty")(options "")(descr "KAOS-2 project footprints"))
+)
