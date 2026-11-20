@@ -58,7 +58,7 @@
 	)
 	(fp_line
 		(start 0 -12)
-		(end 9.5 -12)
+		(end 14.58 -12)
 		(stroke
 			(width 0.254)
 			(type solid)
@@ -77,8 +77,8 @@
 		(uuid "da1f8059-a57c-418d-85e3-1be7912a68f4")
 	)
 	(fp_line
-		(start 9.5 -12)
-		(end 9.5 0)
+		(start 14.58 -12)
+		(end 14.58 0)
 		(stroke
 			(width 0.245)
 			(type solid)
@@ -87,7 +87,7 @@
 		(uuid "dcc5e314-2c37-4ec3-a29c-7320b4fbbce7")
 	)
 	(fp_line
-		(start 9.5 0)
+		(start 14.58 0)
 		(end 0 0)
 		(stroke
 			(width 0.254)
@@ -178,6 +178,52 @@
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "8b472a61-7bda-43ff-b815-2e34633525d4")
+	)
+	(fp_text user "3V3"
+		(at 8.58 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ab95a977-7124-493d-92d6-c523dda8b327")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "4" thru_hole oval
+		(at 9.88 -2 90)
+		(size 2.6 1.6)
+		(drill 1
+			(offset 0.3 0)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1d4536c4-fabc-48f4-b9c4-91c761699fc7")
+	)
+	(fp_text user "GND"
+		(at 11.02 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "f0cf4f75-cd70-4520-80c7-a4bc4267e24c")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "5" thru_hole oval
+		(at 12.42 -2 90)
+		(size 2.6 1.6)
+		(drill 1
+			(offset 0.3 0)
+		)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5b8ed28e-1998-4b0d-8e6c-ea89b3541c2b")
 	)
 	(embedded_fonts no)
 )
