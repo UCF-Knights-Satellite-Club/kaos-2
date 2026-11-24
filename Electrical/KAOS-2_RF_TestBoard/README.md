@@ -2,6 +2,15 @@
 
 Small 2-layer prototype (72 × 46 mm, 1.6 mm) to prove the 144.39 MHz APRS transmit chain and the 915 MHz LoRa link before the flight RF board. The RF MCU (Raspberry Pi Pico) stays off-board and connects through the 2×9 header J1.
 
+## Renders
+Rendered from the fab gerbers in `fab/` (what OSH Park will build).
+
+| Top | Bottom |
+|---|---|
+| ![Top](renders/board_top.png) | ![Bottom](renders/board_bottom.png) |
+
+Top: SX1278 (U1) with the 144 MHz match/filter running right to J3; Ra-01H (U2) feeding J5 through the 915 MHz coplanar trace; Pico header J1 along the bottom edge.
+
 ## What's on it
 - **144.39 MHz APRS TX:** Semtech SX1278 (direct-FSK AFSK from Pico PIO), Jauch 32 MHz TCXO, L-match to Semtech's measured PA_BOOST load (~13 + j7 Ω, AN1200.19), 7-pole 0.1 dB Chebyshev low-pass (fc ≈ 170 MHz), output pi-pad footprint, edge SMA (J3).
 - **915 MHz LoRa:** Ai-Thinker Ra-01H (SX1276) with its own supply filter, pi-match footprint and a 50 Ω coplanar trace to edge SMA (J5).
